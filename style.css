@@ -1,0 +1,64 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .parent {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            width: 100%;
+        }
+       
+        .parent .container  , 
+        .resultOFPeration {
+            background-color: #777;
+            width: 350px;
+            margin: 10px auto;
+            text-align: center;
+            color: white;
+            padding: 10px;
+
+            border-radius:8px;
+            box-shadow: 0 3px 3px gray , 0 -3px 3px gray  ;
+
+            cursor: pointer;
+        }
+        
+        .parent .container div {
+            margin: 10px;
+        }
+
+        .parent .container .show-info input {
+            width: 85%;
+            outline: none;
+
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            caret-color:black;
+        }
+        .parent .container .operations {
+            width: 100%;
+            margin: 5px;
+        }
+        .parent .container .operations button {
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            text-transform: capitalize;
+            transition: all 0.4s ease;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .parent .container .operations button:hover {
+            background-color: #d8d6d6;
+            transform: scale(1.1);
+        }
